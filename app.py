@@ -15,8 +15,8 @@ CLASS_NAMES = ['Cat', 'Dog', 'Leopard', 'Lion', 'Tiger']
 # 3. Hàm tải Model
 @st.cache_resource
 def load_model():
-    # Đảm bảo bạn đã tải file 'best_model.h5' lên cùng thư mục
-    return tf.keras.models.load_model('best_model.h5')
+    # Đảm bảo bạn đã tải file 'my_model.h5' lên cùng thư mục
+    return tf.keras.models.load_model('my_model.h5')
 
 try:
     model = load_model()
