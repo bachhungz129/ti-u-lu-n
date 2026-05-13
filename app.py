@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 import tensorflow as tf
 import numpy as np
 from PIL import Image
@@ -9,8 +10,7 @@ st.title("🐾 Ứng dụng Phân loại Động vật")
 st.write("Tải lên một hình ảnh để AI dự đoán loài vật đó là gì.")
 
 # 2. Định nghĩa danh sách nhãn (Bạn hãy thay đổi thứ tự này cho đúng với dữ liệu của bạn)
-# Ví dụ: ['Cat', 'Dog', 'Leopard', 'Lion', 'Tiger']
-CLASS_NAMES = ['Cat', 'Dog', 'Leopard', 'Lion', 'Tiger'] 
+CLASS_NAMES = ['Elephant', 'Cow', 'Leopard', 'Monkey', 'Tiger'] 
 
 # 3. Hàm tải Model
 @st.cache_resource
